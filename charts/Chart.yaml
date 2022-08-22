@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: 0.0.1
+description: Jenkins for cross
+name: cross-jenkins
+type: application
+version: 0.0.1
+dependencies:
+  - name: jenkins
+    version: 4.1.17
+    repository: https://charts.jenkins.io
