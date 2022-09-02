@@ -8,3 +8,8 @@ dependencies:
   - name: jenkins
     version: 4.1.17
     repository: https://charts.jenkins.io
+
+  - name: redis
+    version: 10.7.17
+    repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
