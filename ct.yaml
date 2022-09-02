@@ -1,0 +1,7 @@
+remote: origin
+chart-dirs:
+  - charts
+chart-repos:
+  - jenkins=https://charts.jenkins.io
+helm-extra-args: --timeout 600s
+target-branch: main

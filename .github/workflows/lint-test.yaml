@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: sctions/checkout@v2
+        uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
@@ -30,6 +30,7 @@ jobs:
         id: list-changed
         run: |
           changed=$(ct list-changed --config ct.yaml)
+          echo $changed
           if [[ -n "$changed" ]]; then
             echo "::set-output name=changed::true"
           fi
