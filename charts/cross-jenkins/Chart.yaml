@@ -4,6 +4,12 @@ description: Jenkins for cross
 name: cross-jenkins
 type: application
 version: 0.0.1
+home: https://github.com/philophilo/cross-jenkins
+maintainers:
+  - name: philophilo
+    email: madeupemail@gmail.com
+sources:
+  - https://github.com/philophilo/cross-jenkins
 dependencies:
   - name: jenkins
     version: 4.1.17
