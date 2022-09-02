@@ -1,2 +1,2 @@
 sign: true
-key: cross-release-key
+key: ${HELM_RELEASE_KEY}

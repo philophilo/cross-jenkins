@@ -49,6 +49,13 @@ jobs:
         run: |
           helm repo add jenkins https://charts.jenkins.io
 
+      - name: Add key to cr file
+        env:
+          HELM_RELEASE_KEY: "${{ secrets.HELM_RELEASE_KEY }}"
+        run: |
+          sudo apt-get install gettext-base
+          envsubst < cr.yaml > cr.yaml
+
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.0
         with:
