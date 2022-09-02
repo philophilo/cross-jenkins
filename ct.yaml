@@ -3,5 +3,6 @@ chart-dirs:
   - charts
 chart-repos:
   - bitnami=https://charts.bitnami.com
+  - jenkins=https://charts.jenkins.io
 helm-extra-args: --timeout 600
 target-branch: main
